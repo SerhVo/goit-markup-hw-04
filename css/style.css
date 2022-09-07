@@ -1,0 +1,411 @@
+:root {
+  --main-color: #212121;
+  --second-color: #ffffff;
+  --one-color: #000000;
+  --two-color: #757575;
+  --three-color: #f5f4fa;
+  --line-color: #ececec;
+  --line-color-second: #eeeeee;
+  --main-btn-color: #2196f3;
+  --main-bg-color: #2f303a;
+}
+
+/*    утіліти */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--main-color);
+  background-color: var(--second-color);
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*    header- index   */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--main-btn-color);
+  margin-right: 93px;
+}
+
+.logo > span {
+  color: var(--one-color);
+}
+
+.nav-link {
+  display: block;
+  padding: 32px 0;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover {
+  color: var(--main-btn-color);
+}
+
+.contact-link {
+  display: block;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--two-color);
+}
+
+.nav-links .item:not(:last-child),
+.contact-links .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--main-btn-color);
+}
+
+.header {
+  border-bottom: 1px solid var(--line-color);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.contact-links {
+  display: flex;
+  margin-left: auto;
+}
+
+.current {
+  color: var(--main-btn-color);
+}
+
+/*   main - sections*/
+
+.hero {
+  background-color: var(--main-bg-color);
+  padding: 200px 0;
+  text-align: center;
+}
+
+.hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: 696px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--second-color);
+}
+
+.hero-button {
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 2.14;
+  letter-spacing: 0.06em;
+  color: var(--second-color);
+  border-color: var(--main-btn-color);
+  padding: 10px 32px;
+  background-color: var(--main-btn-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--main-btn-color);
+  background-color: var(--second-color);
+  border-color: var(--main-btn-color);
+}
+
+.hero-button:active {
+  color: var(--main-btn-color);
+  background-color: var(--second-color);
+  border-color: var(--main-btn-color);
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*   section  work */
+
+.work {
+  background-color: var(--second-color);
+  text-align: start;
+  padding: 94px 0;
+}
+
+.work2 {
+    background-color: var(--second-color);
+   text-align: start;
+  
+}
+
+.work-center {
+  display: flex;
+}
+
+.work-center > li {
+  width: 270px;
+}
+
+.work-center > li:not(:last-child) {
+  margin-left: 30px;
+}
+
+.work-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.work-text {
+  line-height: 1.71;
+  color: var(--two-color);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.17;
+  margin-bottom: 50px;
+}
+
+.work-images {
+  display: flex;
+}
+
+.work-images > li:not(:last-child) {
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
+
+/*   section- team  */
+
+.team {
+  background-color: var(--three-color);
+  padding: 94px 0;
+}
+
+.team-cards {
+  display: flex;
+}
+
+.team-cards > li {
+  padding-bottom: 30px;
+
+  text-align: center;
+  width: 270px;
+  background-color: var(--second-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-cards > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-name {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-position {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--two-color);
+}
+
+/*   footer  */
+
+.footer {
+  padding: 60px 0;
+  background-color: var(--main-bg-color);
+}
+
+address > ul > li:first-child {
+  margin-top: 20px;
+}
+
+address > ul > li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--main-btn-color);
+}
+
+.footer-link {
+  font-weight: 400;
+}
+
+.logo-footer > span {
+  color: var(--second-color);
+}
+
+.footer > .container > ul > li {
+  margin-top: 9px;
+}
+
+.adr-color {
+  color: var(--second-color);
+}
+
+/*   portfolio  - main */
+
+.projects {
+  background-color: var(--second-color);
+  padding: 94px 0;
+}
+
+.projects-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.projects-btn > li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.item-btn {
+  font-family: "Roboto";
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  background-color: var(--three-color);
+  border-color: var(--three-color);
+  border-radius: 4px;
+}
+
+.current-btn {
+  color: var(--second-color);
+  background-color: var(--main-btn-color);
+}
+
+.total-btn {
+  padding: 6px 25px;
+}
+
+.item-btn:hover,
+.item-btn:focus {
+  color: var(--second-color);
+  background-color: var(--main-btn-color);
+  border-color: var(--main-btn-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+
+.project-card {
+  margin-bottom: 30px;
+  margin-right: 30px;
+
+  width: 370px;
+  padding-bottom: 20px;
+  background-color: var(--second-color);
+  border: 1px solid var(--line-color);
+}
+
+.project-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.project-card:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.project-card > h3,
+.project-card > p {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.project-title {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-type {
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--two-color);
+}
