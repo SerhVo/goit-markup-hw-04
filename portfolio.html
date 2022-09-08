@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>WebStudio</title>
   </head>
@@ -16,17 +17,19 @@
   <body>
     <!--шапка-->
     <header class="header">
-      <nav class="nav-menu container">
-        <a class="logo" href="./index.html">Web<span>Studio</span></a>
-        <ul class="nav-links">
-          <li class="item">
-            <a class="nav-link" href="./index.html">Студія</a>
-          </li>
-          <li class="item">
-            <a class="nav-link current" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li class="item"><a class="nav-link" href="#">Контакти</a></li>
-        </ul>
+      <div class="container">
+        <nav class="nav-menu">
+          <a class="logo" href="./index.html">Web<span>Studio</span></a>
+          <ul class="nav-links">
+            <li class="item">
+              <a class="nav-link current" href="./index.html">Студія</a>
+            </li>
+            <li class="item">
+              <a class="nav-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="item"><a class="nav-link" href="#">Контакти</a></li>
+          </ul>
+        </nav>
         <ul class="contact-links">
           <li class="item">
             <a class="contact-link" href="mailto:info@devstudio.com"
@@ -39,7 +42,7 @@
             >
           </li>
         </ul>
-      </nav>
+      </div>
     </header>
     <!--основна частина-->
     <main>
@@ -68,8 +71,10 @@
                   alt="включений ноутбук"
                   width="370"
                 />
-                <h3 class="project-title">Технокряк</h3>
-                <p class="project-type">Веб-сайт</p>
+                <div class="card-item">
+                  <h3 class="project-title">Технокряк</h3>
+                  <p class="project-type">Веб-сайт</p>
+                </div>
               </li>
 
               <li class="project-card">
@@ -78,8 +83,12 @@
                   alt="гра в басткетбол"
                   width="370"
                 />
-                <h3 class="project-title">Постер New Orlean vs Golden Star</h3>
-                <p class="project-type">Дизайн</p>
+                <div class="card-item">
+                  <h3 class="project-title">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="project-type">Дизайн</p>
+                </div>
               </li>
 
               <li class="project-card">
@@ -88,8 +97,10 @@
                   alt="логотип з рибою"
                   width="370"
                 />
-                <h3 class="project-title">Ресторан Seafood</h3>
-                <p class="project-type">Додаток</p>
+                <div class="card-item">
+                  <h3 class="project-title">Ресторан Seafood</h3>
+                  <p class="project-type">Додаток</p>
+                </div>
               </li>
 
               <li class="project-card">
@@ -98,8 +109,10 @@
                   alt="фото навушників"
                   width="370"
                 />
-                <h3 class="project-title">Проєкт Prime</h3>
-                <p class="project-type">Маркетинг</p>
+                <div class="card-item">
+                  <h3 class="project-title">Проєкт Prime</h3>
+                  <p class="project-type">Маркетинг</p>
+                </div>
               </li>
 
               <li class="project-card">
@@ -108,8 +121,10 @@
                   alt="картонні коробочки"
                   width="370"
                 />
-                <h3 class="project-title">Проєкт Boxes</h3>
-                <p class="project-type">Додаток</p>
+                <div class="card-item">
+                  <h3 class="project-title">Проєкт Boxes</h3>
+                  <p class="project-type">Додаток</p>
+                </div>
               </li>
               <li class="project-card">
                 <img
@@ -117,8 +132,10 @@
                   alt="монітор"
                   width="370"
                 />
-                <h3 class="project-title">Inspiration has no Borders</h3>
-                <p class="project-type">Веб-сайт</p>
+                <div class="card-item">
+                  <h3 class="project-title">Inspiration has no Borders</h3>
+                  <p class="project-type">Веб-сайт</p>
+                </div>
               </li>
               <li class="project-card">
                 <img
@@ -126,8 +143,10 @@
                   alt="відкрита книга"
                   width="370"
                 />
-                <h3 class="project-title">Inspiration has no Borders</h3>
-                <p class="project-type">Дизайн</p>
+                <div class="card-item">
+                  <h3 class="project-title">Inspiration has no Borders</h3>
+                  <p class="project-type">Дизайн</p>
+                </div>
               </li>
               <li class="project-card">
                 <img
@@ -135,8 +154,10 @@
                   alt="бейджік-бірка"
                   width="370"
                 />
-                <h3 class="project-title">Проєкт LAB</h3>
-                <p class="project-type">Маркетинг</p>
+                <div class="card-item">
+                  <h3 class="project-title">Проєкт LAB</h3>
+                  <p class="project-type">Маркетинг</p>
+                </div>
               </li>
               <li class="project-card">
                 <img
@@ -144,14 +165,15 @@
                   alt="робота на ноутбукі"
                   width="370"
                 />
-                <h3 class="project-title">Growing Business</h3>
-                <p class="project-type">Додаток</p>
+                <div class="card-item">
+                  <h3 class="project-title">Growing Business</h3>
+                  <p class="project-type">Додаток</p>
+                </div>
               </li>
             </ul>
           </li>
         </ul>
       </section>
-      <section></section>
     </main>
     <!--футер-->
     <footer class="footer">
