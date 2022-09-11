@@ -86,7 +86,8 @@ img {
   letter-spacing: 0.02em;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--main-btn-color);
 }
 
@@ -210,7 +211,7 @@ img {
   width: 1px;
 }
 
-/*   section  work */
+/*                    section  work                           */
 
 .work {
   background-color: var(--second-color);
@@ -226,6 +227,7 @@ img {
 
 .work-center {
   display: flex;
+  
 }
 
 .work-center>li {
@@ -237,8 +239,10 @@ img {
 }
 
 .work-card {
-  display: block;
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  
   width: 270px;
   height: 120px;
   background-color: var(--three-color);
@@ -343,45 +347,62 @@ img {
   color: var(--second-color);
   background-color: transparent;
   border-radius: 50%;
-  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.icon-cover:hover,
+.icon-cover:hover {
+  background-color: var(--main-btn-color);
+}
+
 .icon-cover:focus {
   background-color: var(--main-btn-color);
 }
 
-.icon-cover:hover .icon-social,
+.icon-cover:hover .icon-social {
+  fill: var(--second-color);
+}
 .icon-cover:focus .icon-social {
   fill: var(--second-color);
 }
 
 .cliens {
   background-color: var(--second-color);
-  padding: 94px 94px;
+  padding: 94px 0;
 }
 
 .icon-cliens {
   display: flex;
+  justify-content: center;
+  align-items: center;  
 }
 
-.icon-cliens>li {
-  display: block;
+.icon-client-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  cursor: pointer;
-  padding: 16px 32px;
+  cursor: pointer;  
 }
 
-.icon-cliens>li:hover,
-.icon-cliens>li:focus {
+.icon-client {
+display: flex;
+  height: 60px;
+  width: 106px;
+  fill: var(--icon-color);
+}
+
+.icon-client-bg:hover,
+.icon-client-bg:focus {
   border: 1px solid var(--main-btn-color);
 }
 
-.icon-cliens>li:hover .icon-client,
-.icon-cliens>li:focus .icon-client {
+.icon-client-bg:hover .icon-client,
+.icon-client-bg:focus .icon-client {
   fill: var(--main-btn-color);
 }
 
@@ -389,11 +410,6 @@ img {
   margin-right: 30px;
 }
 
-.icon-client {
-  height: 60px;
-  width: 106px;
-  fill: var(--icon-color);
-}
 
 
 /*                     footer                      */
@@ -447,10 +463,13 @@ address>ul>li:not(:last-child) {
 }
 
 .footer-icon-cover {
+  display: flex;
   height: 44px;
   width: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  align-items:center;
+  justify-content: center;
 }
 
 .footer-social-icons>li {
@@ -468,14 +487,11 @@ address>ul>li:not(:last-child) {
   display: flex;
 }
 
-.footer-icon-a {
-  display: flex;
-}
-
 .footer-icon-social {
+  display: flex;
   height: 20px;
   width: 20px;
-  fill: var(--icon-color);
+  fill: var(--icon-color);  
 }
 
 .footer-icon-cover:hover,
@@ -541,6 +557,7 @@ address>ul>li:not(:last-child) {
 }
 
 .project-card {
+  display: block;
   flex-basis: calc((100% - 60px) / 3);
   background-color: var(--second-color);
 }
@@ -552,7 +569,9 @@ address>ul>li:not(:last-child) {
 
 .card-item {
   padding: 20px 24px;
-  border: 1px solid var(--line-color);
+  border-left: 1px solid var(--line-color);
+  border-right: 1px solid var(--line-color);
+  border-bottom: 1px solid var(--line-color);
 }
 
 .project-title {
@@ -573,7 +592,7 @@ address>ul>li:not(:last-child) {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-bg.jpg);
+  background-image: linear-gradient(to left,  rgba(47, 48, 58, 0.4),  rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
